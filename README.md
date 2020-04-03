@@ -1,5 +1,5 @@
 # covid-19-indian-state-reports
-Archive of COVID-19 related bulletins issued by state governments in India. In addition to reports about confirmed cases, some of these reports provide details about patients' travel history, data on suspected cases and other useful information. This repository hosts both the pdf and txt files (the txt files are a snapshot from March 21; please refer to the pdf folder for the complete bulletins). 
+Archive of COVID-19 related bulletins issued by state governments in India. In addition to reports about confirmed cases, some of these reports provide details about patients' travel history, data on suspected cases and other useful information. This repository hosts both pdf documents and images. 
 
 List of states covered in the archive:
 
@@ -40,7 +40,7 @@ http://www.rajswasthya.nic.in/
 https://stopcoronatn.in/dailybulletin.html
 
 - Telangana (TG)
-https://chfw.telangana.gov.in/media.html
+https://chfw.telangana.gov.in/media.html 
 
 - West Bengal (WB)
 https://www.wbhealth.gov.in/pages/corona/bulletin
