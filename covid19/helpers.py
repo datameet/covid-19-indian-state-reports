@@ -49,13 +49,24 @@ def _prepare_datetime(groups):
 
     return datetime.datetime(y, m, d, hour, minute)
 
-def download(url, download_root):
-    filename = url.split("/")[-1]
+def download(url, download_root, filename=None):
+    filename = filename or url_to_filename(url)
     path = Path(download_root) / filename
 
     logger.info("download: %s -> %s", url, path)
     content = requests.get(url).content
     path.write_bytes(content)
+
+def url_to_filename(url):
+    """Converts URL to filename.
+    """
+    scheme, netloc, path, query, fragment = urllib.parse.urlsplit    
+    return path.split("/")[-1]
+
+def already_downloaded(url, download_root, filename=None):
+    filename = filename or url_to_filename(url)
+    path = Path(download_root) / filename
+    return path.exists()
 
 def setup_logger():
     logging.basicConfig(
